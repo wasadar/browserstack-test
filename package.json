@@ -1,0 +1,16 @@
+{
+  "name": "browserstack-test",
+  "type": "module",
+  "devDependencies": {
+    "@wdio/browserstack-service": "^8.27.0",
+    "@wdio/cli": "^8.27.0",
+    "@wdio/local-runner": "^8.27.0",
+    "@wdio/mocha-framework": "^8.27.0",
+    "@wdio/spec-reporter": "^8.27.0",
+    "dotenv": "^16.3.1"
+  },
+  "scripts": {
+    "test-samsung": "wdio run ./wdio.conf.samsung.js",
+    "test-samsung-ultra": "wdio run ./wdio.conf.samsung-ultra.js"
+  }
+}
