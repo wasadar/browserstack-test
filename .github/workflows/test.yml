@@ -18,4 +18,7 @@ jobs:
 
     - name: Run tests
       run: npm run test-samsung-ultra
-      continue-on-error: true
+      env:
+        BROWSERSTACK_USERNAME: ${{ secrets.BROWSERSTACK_USERNAME }}
+        BROWSERSTACK_ACCESS_KEY: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
+        BROWSERSTACK_APP_ID: ${{ secrets.BROWSERSTACK_APP_ID }}
